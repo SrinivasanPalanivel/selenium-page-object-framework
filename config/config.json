@@ -1,0 +1,10 @@
+{
+  "environment": {
+    "QA": {
+      "url": "http://www.automationpractice.pl"
+    },
+    "UAT": {
+      "url": "http://www.automationpractice.pl"
+    }
+  }
+}
