@@ -10,6 +10,8 @@ public final class LoginPage extends BrowserUtility{
 	private static final By USERNAME_TEXTBOX_LOCATOR = By.id("email");
 	private static final By PASSWORD_TEXTBOX_LOCATOR = By.id("passwd");
 	private static final By LOGIN_BUTTON_LOCATOR = By.id("SubmitLogin");
+	private static final By CREATE_ACCOUNT_BUTTON_LOCATOR = By.id("SubmitCreate");
+	private static final By EMAIL_ADDRESS_TEXTBOX_LOCATOR = By.id("email_create");
 	
 	public LoginPage(WebDriver driver) {
 		super(driver);
@@ -28,6 +30,16 @@ public final class LoginPage extends BrowserUtility{
 	
 	public LoginPage clickOnLogin() {
 		clickOn(LOGIN_BUTTON_LOCATOR);
+		return this;
+	}
+	
+	public LoginPage name(String emailAddress) {
+		setText(CREATE_ACCOUNT_BUTTON_LOCATOR, emailAddress);
+		return this;
+	}
+	
+	public LoginPage clickOnCreateAccount() {
+		clickOn(CREATE_ACCOUNT_BUTTON_LOCATOR);
 		return this;
 	}
 	

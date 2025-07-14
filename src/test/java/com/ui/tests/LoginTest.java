@@ -19,8 +19,15 @@ public class LoginTest {
 	}
 
 	@Test(description = "Verify Login with Valid Credentials", groups = {"smoke","regression"}, 
-			dataProviderClass = com.ui.dataproviders.LoginDataProviders.class, dataProvider = "LoginTestDataProvider")
-	public void loginTest(User user) {
+			dataProviderClass = com.ui.dataproviders.LoginDataProviders.class, dataProvider = "LoginTestDataProvider_JSON")
+	public void loginTest_JSON(User user) {
+		String accountName = homePage.goToLoginPage().doLoginWith(user.getUsername(), user.getPassword()).getAccountName();
+		assertEquals(accountName, "John Doe");
+	}
+	
+	@Test(description = "Verify Login with Valid Credentials", groups = {"smoke"}, 
+			dataProviderClass = com.ui.dataproviders.LoginDataProviders.class, dataProvider = "LoginTestDataProvider_CSV")
+	public void loginTest_CSV(User user) {
 		String accountName = homePage.goToLoginPage().doLoginWith(user.getUsername(), user.getPassword()).getAccountName();
 		assertEquals(accountName, "John Doe");
 	}
