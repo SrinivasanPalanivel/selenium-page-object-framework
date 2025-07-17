@@ -31,5 +31,12 @@ public class LoginTest {
 		String accountName = homePage.goToLoginPage().doLoginWith(user.getUsername(), user.getPassword()).getAccountName();
 		assertEquals(accountName, "John Doe");
 	}
+	
+	@Test(description = "Verify Login with Valid Credentials", groups = {"smoke","sanity"}, 
+			dataProviderClass = com.ui.dataproviders.LoginDataProviders.class, dataProvider = "LoginTestDataProvider_Excel")
+	public void loginTest_Excel(User user) {
+		String accountName = homePage.goToLoginPage().doLoginWith(user.getUsername(), user.getPassword()).getAccountName();
+		assertEquals(accountName, "John Doe");
+	}
 
 }
