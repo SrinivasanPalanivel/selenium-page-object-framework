@@ -3,6 +3,9 @@ package com.ui.pages;
 import org.openqa.selenium.By;
 
 import com.constants.Browser;
+import com.constants.Env;
+import com.ui.pojo.Environment;
+
 import static com.constants.Env.*;
 import com.utility.BrowserUtility;
 import static com.utility.JSONUtility.*;
@@ -17,7 +20,7 @@ public final class HomePage extends BrowserUtility {
 		super(browserName);
 		maximizeWindow();
 		//goToWebsite(readProperties(QA, "URL"));
-		goToWebsite(readJSONFile(QA));
+		goToWebsite(readJSONFile(QA).getUrl());
 	}
 	
 	public LoginPage goToLoginPage() {
