@@ -17,7 +17,7 @@ public final class HomePage extends BrowserUtility {
 		super(browserName);
 		maximizeWindow();
 		//goToWebsite(readProperties(QA, "URL"));
-		goToWebsite(readJSON(QA));
+		goToWebsite(readJSONFile(QA));
 	}
 	
 	public LoginPage goToLoginPage() {

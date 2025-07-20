@@ -11,7 +11,7 @@ import com.ui.pojo.Environment;
 
 public class JSONUtility {
 
-	public static String readJSON(Env env) {
+	public static String readJSONFile(Env env) {
 		
 		Gson gson = new Gson();
 		
