@@ -1,23 +1,22 @@
-2025-07-20 13:45:00 [main] INFO com.ui.listeners.TestListener::onStart::36: Test Suite Started 
-2025-07-20 13:45:09 [main] INFO com.ui.listeners.TestListener::onTestStart::17: loginTest_Excel 
-2025-07-20 13:45:09 [main] INFO com.ui.listeners.TestListener::onTestStart::18: Verify Login with Valid Credentials 
-2025-07-20 13:45:09 [main] INFO com.ui.listeners.TestListener::onTestStart::19: [smoke, sanity] 
-2025-07-20 13:45:12 [main] INFO com.ui.listeners.TestListener::onTestSuccess::23: loginTest_Excel PASSED 
-2025-07-20 13:45:18 [main] INFO com.ui.listeners.TestListener::onTestStart::17: loginTest_Excel 
-2025-07-20 13:45:18 [main] INFO com.ui.listeners.TestListener::onTestStart::18: Verify Login with Valid Credentials 
-2025-07-20 13:45:18 [main] INFO com.ui.listeners.TestListener::onTestStart::19: [smoke, sanity] 
-2025-07-20 13:45:20 [main] WARN com.ui.listeners.TestListener::onTestSkipped::32: loginTest_Excel SKIPPED 
-2025-07-20 13:45:26 [main] INFO com.ui.listeners.TestListener::onTestStart::17: loginTest_Excel 
-2025-07-20 13:45:26 [main] INFO com.ui.listeners.TestListener::onTestStart::18: Verify Login with Valid Credentials 
-2025-07-20 13:45:26 [main] INFO com.ui.listeners.TestListener::onTestStart::19: [smoke, sanity] 
-2025-07-20 13:45:29 [main] ERROR com.ui.listeners.TestListener::onTestFailure::27: loginTest_Excel FAILED 
-2025-07-20 13:45:29 [main] ERROR com.ui.listeners.TestListener::onTestFailure::28: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='account']"}
-  (Session info: chrome=138.0.7204.158)
+2025-07-27 14:46:31 [main] INFO com.ui.listeners.TestListener::onStart::24: Test Suite Started 
+2025-07-27 14:46:45 [TestNG-test-Test-1] INFO com.ui.listeners.TestListener::onTestStart::29: loginTest_JSON 
+2025-07-27 14:46:45 [TestNG-test-Test-1] INFO com.ui.listeners.TestListener::onTestStart::30: Verify Login with Valid Credentials 
+2025-07-27 14:46:45 [TestNG-test-Test-1] INFO com.ui.listeners.TestListener::onTestStart::31: [regression, smoke] 
+2025-07-27 14:46:49 [TestNG-test-Test-1] INFO com.ui.listeners.TestListener::onTestSuccess::36: loginTest_JSON PASSED 
+2025-07-27 14:47:32 [TestNG-test-Test-1] INFO com.ui.listeners.TestListener::onTestStart::29: loginTest_JSON 
+2025-07-27 14:47:32 [TestNG-test-Test-1] INFO com.ui.listeners.TestListener::onTestStart::30: Verify Login with Valid Credentials 
+2025-07-27 14:47:32 [TestNG-test-Test-1] INFO com.ui.listeners.TestListener::onTestStart::31: [regression, smoke] 
+2025-07-27 14:47:34 [TestNG-test-Test-1] ERROR com.ui.listeners.TestListener::onTestFailure::41: loginTest_JSON FAILED 
+2025-07-27 14:47:34 [TestNG-test-Test-1] ERROR com.ui.listeners.TestListener::onTestFailure::43: expected [John Doe] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='account']"}
+  (Session info: chrome=127.0.6533.73)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7089670bfea990ee2ff9cb7295e26c34, findElement {using=xpath, value=//a[@class='account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64414/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7089670bfea990ee2ff9cb7295e26c34 
-2025-07-20 13:45:29 [main] INFO com.ui.listeners.TestListener::onFinish::40: Test Suite Completed 
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [59779ad0d2572556b6bd931337684102, findElement {using=xpath, value=//a[@class='account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: wss://cdp-mumbai.lambdatest..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59779ad0d2572556b6bd931337684102] 
+2025-07-27 14:47:34 [TestNG-test-Test-1] INFO com.ui.listeners.TestListener::onTestFailure::48: Capturing Screenshot for the Failed Test 
+2025-07-27 14:47:35 [TestNG-test-Test-1] INFO com.ui.listeners.TestListener::onTestFailure::50: Attaching Screenshot to HTML Report 
+2025-07-27 14:47:35 [TestNG-test-Test-1] INFO com.ui.listeners.TestListener::onTestFailure::52: Screenshot Attached to the HTML Report 
+2025-07-27 14:47:36 [main] INFO com.ui.listeners.TestListener::onFinish::61: Test Suite Completed 

@@ -13,7 +13,7 @@ public class RegistrationTest {
 	
 	@BeforeMethod(description = "Launch Application HomePage")
 	public void setup() {
-		homePage = new HomePage(CHROME);
+		homePage = new HomePage(CHROME, false);
 	}
 	
 	@Test
