@@ -44,7 +44,7 @@ jobs:
       uses: actions/upload-artifact@v4.6.2
       with:
         name: Test Logs
-        path: /logs
+        path: logs/
 
     # Store Test Results
     - name: Upload Test Results
