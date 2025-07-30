@@ -36,7 +36,7 @@ jobs:
 
     # Run Tests    
     - name: Running Test Automation Framework with Maven
-      run: mvn test -X -Dbrowser=chrome -DisLambdaTest=false -DisHeadLess=false
+      run: mvn test -X -Dbrowser=chrome -DisLambdaTest=true -DisHeadLess=false
 
     # Store Test Logs  
     - name: Upload Test Logs
