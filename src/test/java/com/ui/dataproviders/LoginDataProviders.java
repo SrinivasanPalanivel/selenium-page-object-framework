@@ -22,7 +22,7 @@ public class LoginDataProviders {
 		
 		Gson gson = new Gson();
 		
-		File loginDataFile = new File(System.getProperty("user.dir")+"\\testdata\\login-data.json");
+		File loginDataFile = new File(System.getProperty("user.dir")+"//testdata//login-data.json");
 		FileReader reader = null;
 		try {
 			reader = new FileReader(loginDataFile);
