@@ -30,7 +30,7 @@ public class CSVReaderUtility {
 			userList = new ArrayList<>();
 			
 			while((line =  csvReader.readNext())!= null) {
-				userData = new User(line[0], line[1]);
+				userData = new User(line[0], line[1], line[2]);
 				userList.add(userData);
 			}
 		} catch (IOException | CsvValidationException e) {

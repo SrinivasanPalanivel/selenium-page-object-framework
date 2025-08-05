@@ -1,0 +1,12 @@
+{
+	"data": [
+		{
+			"username": "nasurath@firefox.com",
+			"password": "Test@123"	
+		},
+		{
+			"username": "filomona@chrome.com",
+			"password": "Test@123"
+		}
+	]
+}

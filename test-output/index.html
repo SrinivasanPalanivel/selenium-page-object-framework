@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,35 +92,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">5 methods,  5 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest_JSON(User [username=nuke3839@binafex.com, password=Test@321])">loginTest_JSON(User [username=nuke3839@binafex.com, password=Test@321])</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest_Invalid_JSON(User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina])">loginTest_Invalid_JSON(User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest_JSON(User [username=fifepo3104@binafex.com, password=Test@123])">loginTest_JSON(User [username=fifepo3104@binafex.com, password=Test@123])</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest_Invalid_JSON(User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe])">loginTest_Invalid_JSON(User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest_Valid_JSON(User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina])">loginTest_Valid_JSON(User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ui.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest_Valid_JSON(User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe])">loginTest_Valid_JSON(User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ui.tests.SearchProductTest" class="method navigator-link" hash-for-method="searchProductTest">searchProductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,59 +138,106 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.ui.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest_JSON(User [username=nuke3839@binafex.com, password=Test@321])">
-                  </a> <!-- loginTest_JSON(User [username=nuke3839@binafex.com, password=Test@321]) -->
-                  <span class="method-name">loginTest_JSON</span>
-                  <span class="parameters">(User [username=nuke3839@binafex.com, password=Test@321])</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [John Doe] but found [no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;account&apos;]&quot;}
-  (Session info: chrome=127.0.6533.73)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [6553ba435ee39f3e5570fc8e30ae9c59, findElement {value=//a[@class=&apos;account&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: wss://cdp-mumbai.lambdatest..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6553ba435ee39f3e5570fc8e30ae9c59]
-	at com.ui.tests.LoginTest.loginTest_JSON(LoginTest.java:20)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 19 stack frames
+                  <a name="loginTest_Invalid_JSON(User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina])">
+                  </a> <!-- loginTest_Invalid_JSON(User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina]) -->
+                  <span class="method-name">loginTest_Invalid_JSON</span>
+                  <span class="parameters">(User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina])</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Login with Invalid Credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest_Invalid_JSON(User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe])">
+                  </a> <!-- loginTest_Invalid_JSON(User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe]) -->
+                  <span class="method-name">loginTest_Invalid_JSON</span>
+                  <span class="parameters">(User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe])</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Login with Invalid Credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest_Valid_JSON(User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina])">
+                  </a> <!-- loginTest_Valid_JSON(User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina]) -->
+                  <span class="method-name">loginTest_Valid_JSON</span>
+                  <span class="parameters">(User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina])</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Login with Valid Credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest_Valid_JSON(User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe])">
+                  </a> <!-- loginTest_Valid_JSON(User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe]) -->
+                  <span class="method-name">loginTest_Valid_JSON</span>
+                  <span class="parameters">(User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe])</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Verify Login with Valid Credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.ui.tests.LoginTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.ui.tests.SearchProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest_JSON(User [username=fifepo3104@binafex.com, password=Test@123])">
-                  </a> <!-- loginTest_JSON(User [username=fifepo3104@binafex.com, password=Test@123]) -->
-                  <span class="method-name">loginTest_JSON</span>
-                  <span class="parameters">(User [username=fifepo3104@binafex.com, password=Test@123])</span>
+                  <a name="searchProductTest">
+                  </a> <!-- searchProductTest -->
+                  <span class="method-name">searchProductTest</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Verify Login with Valid Credentials)                  </em>
+(Search for a product and verify results)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -195,12 +248,13 @@ Session ID: 6553ba435ee39f3e5570fc8e30ae9c59]
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;isHeadLess&quot; value=&quot;false&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;isLambdaTest&quot; value=&quot;true&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;isHeadLess&quot; value=&quot;${isHeadLess}&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;${browser}&quot;/&gt;
+    &lt;parameter name=&quot;isLambdaTest&quot; value=&quot;${isLambdaTest}&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.ui.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.ui.tests.SearchProductTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -214,7 +268,7 @@ Session ID: 6553ba435ee39f3e5570fc8e30ae9c59]
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -228,7 +282,15 @@ Session ID: 6553ba435ee39f3e5570fc8e30ae9c59]
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">loginTest_JSON</span>
+                <span class="method-in-group-name">loginTest_Invalid_JSON</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest_Valid_JSON</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchProductTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -236,7 +298,15 @@ Session ID: 6553ba435ee39f3e5570fc8e30ae9c59]
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">loginTest_JSON</span>
+                <span class="method-in-group-name">loginTest_Invalid_JSON</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest_Valid_JSON</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchProductTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -256,20 +326,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest_JSON')
+data.setCell(0, 1, 'loginTest_Invalid_JSON')
 data.setCell(0, 2, 'com.ui.tests.LoginTest')
-data.setCell(0, 3, 4064);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest_JSON')
+data.setCell(1, 1, 'loginTest_Valid_JSON')
 data.setCell(1, 2, 'com.ui.tests.LoginTest')
-data.setCell(1, 3, 3371);
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginTest_Invalid_JSON')
+data.setCell(2, 2, 'com.ui.tests.LoginTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginTest_Valid_JSON')
+data.setCell(3, 2, 'com.ui.tests.LoginTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'searchProductTest')
+data.setCell(4, 2, 'com.ui.tests.SearchProductTest')
+data.setCell(4, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -297,31 +379,32 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.ui.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(chrome, true, false, [TestResult name={null} status=CREATED method=LoginTest.loginTest_JSON(com.ui.p...)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginTest_JSON(User [username=fifepo3104@binafex.com, password=Test@123])</span>
-                <span class="method-start">32045 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">36158 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome, true, false, [TestResult name={null} status=CREATED method=LoginTest.loginTest_JSON(com.ui.p...)</span>
-                <span class="method-start">36896 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginTest_JSON(User [username=nuke3839@binafex.com, password=Test@321])</span>
-                <span class="method-start">65974 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">70084 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-name">setup(${browser}, false, false, [TestResult name={null} status=CREATED method=LoginTest.loginTest_Invalid_...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">188 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">278 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ui.tests.SearchProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(${browser}, false, false, [TestResult name={null} status=CREATED method=SearchProductTest.searchProd...)</span>
+                <span class="method-start">319 ms</span>
+              </div> <!-- configuration-method before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

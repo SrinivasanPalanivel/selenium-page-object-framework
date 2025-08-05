@@ -9,26 +9,60 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">71,579</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">5</td><td class="num">0</td><td class="num">0</td><td class="num">1,160</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ui.tests.LoginTest</td><td><a href="#m0">loginTest_JSON</a></td><td rowspan="1">1753599031172</td><td rowspan="1">3371</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.ui.tests.LoginTest</td><td><a href="#m1">loginTest_JSON</a></td><td rowspan="1">1753598997243</td><td rowspan="1">4064</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.ui.tests.LoginTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1754364965275</td><td rowspan="1">31</td></tr><tr class="failedodd"><td rowspan="1">com.ui.tests.SearchProductTest</td><td><a href="#m1">setup</a></td><td rowspan="1">1754364965594</td><td rowspan="1">5</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="7">com.ui.tests.LoginTest</td><td><a href="#m2">setup</a></td><td rowspan="3">1754364965463</td><td rowspan="3">0</td></tr><tr class="skippedeven"><td><a href="#m3">setup</a></td></tr><tr class="skippedeven"><td><a href="#m4">setup</a></td></tr><tr class="skippedeven"><td><a href="#m5">tearDown</a></td><td rowspan="4">1754364965544</td><td rowspan="4">0</td></tr><tr class="skippedeven"><td><a href="#m6">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m7">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m8">tearDown</a></td></tr><tr class="skippedodd"><td rowspan="2">com.ui.tests.SearchProductTest</td><td><a href="#m9">setup</a></td><td rowspan="1">1754364965608</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m10">tearDown</a></td><td rowspan="1">1754364965637</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">com.ui.tests.LoginTest</td><td><a href="#m11">loginTest_Invalid_JSON</a></td><td rowspan="2">1754364965410</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m12">loginTest_Invalid_JSON</a></td></tr><tr class="skippedeven"><td><a href="#m13">loginTest_Valid_JSON</a></td><td rowspan="2">1754364965559</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m14">loginTest_Valid_JSON</a></td></tr><tr class="skippedodd"><td rowspan="1">com.ui.tests.SearchProductTest</td><td><a href="#m15">searchProductTest</a></td><td rowspan="1">1754364965623</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.ui.tests.LoginTest#loginTest_JSON</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [username=nuke3839@binafex.com, password=Test@321]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [John Doe] but found [no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;account&apos;]&quot;}
-  (Session info: chrome=127.0.6533.73)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [6553ba435ee39f3e5570fc8e30ae9c59, findElement {value=//a[@class=&apos;account&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: wss://cdp-mumbai.lambdatest..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6553ba435ee39f3e5570fc8e30ae9c59]
-	at com.ui.tests.LoginTest.loginTest_JSON(LoginTest.java:20)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.ui.tests.LoginTest#loginTest_JSON</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [username=fifepo3104@binafex.com, password=Test@123]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.ui.tests.LoginTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>${browser}</td><td>false</td><td>false</td><td>[TestResult name={null} status=CREATED method=LoginTest.loginTest_Invalid_JSON(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@65c7a252] output={null}]</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.ui.tests.SearchProductTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>${browser}</td><td>false</td><td>false</td><td>[TestResult name={null} status=CREATED method=SearchProductTest.searchProductTest()[pri:0, instance:com.ui.tests.SearchProductTest@173ed316] output={null}]</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.ui.tests.LoginTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.ui.tests.LoginTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.ui.tests.LoginTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.ui.tests.LoginTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.ui.tests.LoginTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.ui.tests.LoginTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.ui.tests.LoginTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.ui.tests.SearchProductTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.ui.tests.SearchProductTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.ui.tests.LoginTest#loginTest_Invalid_JSON</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.ui.tests.LoginTest#loginTest_Invalid_JSON</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.ui.tests.LoginTest#loginTest_Valid_JSON</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [username=sopodo2572@kloudis.com, password=password, accountName=Suresh Raina]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.ui.tests.LoginTest#loginTest_Valid_JSON</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>User [username=fifepo3104@binafex.com, password=Test@123, accountName=John Doe]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.ui.tests.SearchProductTest#searchProductTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: No enum constant com.constants.Browser.${BROWSER}
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at com.constants.Browser.valueOf(Browser.java:1)
+	at com.ui.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

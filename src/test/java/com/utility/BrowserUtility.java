@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.apache.commons.io.FileUtils;
@@ -11,6 +12,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -90,6 +92,19 @@ public abstract class BrowserUtility {
 	}
 
 	// Creating Wrapper Methods for Selenium
+	
+	public List<WebElement> getElements(By locator) {
+		try {
+			return driver.get().findElements(locator);
+		} catch (NoSuchElementException e) {
+			System.err.println("Unable to find the element... Try different Locator");
+			return null;
+		} catch (Exception e) {
+			System.err.println("An error occurred while getting elements: " + e.getMessage());
+			return null;
+		}
+	}
+	
 	public void goToWebsite(String url) {
 		driver.get().get(url);
 	}
@@ -109,6 +124,17 @@ public abstract class BrowserUtility {
 	public String getVisibleText(By locator) {
 		try {
 			return driver.get().findElement(locator).getText();
+		} catch (NoSuchElementException e) {
+			System.err.println("Unable to find the element... Try different Locator");
+			return e.getMessage();
+		} catch (Exception e) {
+			return e.getMessage();
+		}
+	}
+	
+	public String getVisibleText(String element) {
+		try {
+			return driver.get().findElement(By.xpath(element)).getText();
 		} catch (NoSuchElementException e) {
 			System.err.println("Unable to find the element... Try different Locator");
 			return e.getMessage();

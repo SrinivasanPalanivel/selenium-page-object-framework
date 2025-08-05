@@ -10,14 +10,14 @@ public final class LoginPage extends BrowserUtility{
 	private static final By USERNAME_TEXTBOX_LOCATOR = By.id("email");
 	private static final By PASSWORD_TEXTBOX_LOCATOR = By.id("passwd");
 	private static final By LOGIN_BUTTON_LOCATOR = By.id("SubmitLogin");
-	private static final By CREATE_ACCOUNT_BUTTON_LOCATOR = By.id("SubmitCreate");
-	private static final By EMAIL_ADDRESS_TEXTBOX_LOCATOR = By.id("email_create");
+	private static final By ALERT_ERROR_LOCATOR = By.xpath("//div[@class='alert alert-danger']/ol/li");
+	
 	
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}
 	
-	//Actions
+	
 	public LoginPage enterUsername(String username) {
 		setText(USERNAME_TEXTBOX_LOCATOR, username); 
 		return this;
@@ -33,21 +33,19 @@ public final class LoginPage extends BrowserUtility{
 		return this;
 	}
 	
-	public LoginPage name(String emailAddress) {
-		setText(CREATE_ACCOUNT_BUTTON_LOCATOR, emailAddress);
-		return this;
-	}
-	
-	public LoginPage clickOnCreateAccount() {
-		clickOn(CREATE_ACCOUNT_BUTTON_LOCATOR);
-		return this;
+	public String getErrorMessage() {
+		return getVisibleText(ALERT_ERROR_LOCATOR);
 	}
 	
 	//Page Function
-	public MyAccountPage doLoginWith(String username, String password) {
+	public MyAccountPage doValidLogin(String username, String password) {
 		enterUsername(username).enterPassword(password).clickOnLogin();
 		MyAccountPage myAccountPage = new MyAccountPage(getDriverInstance());
 		return myAccountPage;
+	}
+	
+	public String  doInvalidLogin(String username, String password) {
+		return enterUsername(username).enterPassword(password).clickOnLogin().getErrorMessage();
 	}
 
 }

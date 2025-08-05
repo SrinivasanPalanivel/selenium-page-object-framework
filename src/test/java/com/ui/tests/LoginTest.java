@@ -15,10 +15,16 @@ public class LoginTest extends BaseTest{
 
 	@Test(description = "Verify Login with Valid Credentials", groups = {"smoke","regression"}, 
 			dataProviderClass = com.ui.dataproviders.LoginDataProviders.class, dataProvider = "LoginTestDataProvider_JSON")
-	public void loginTest_JSON(User user) {
-		String accountName = homePage.goToLoginPage().doLoginWith(user.getUsername(), user.getPassword()).getAccountName();
-		assertEquals(accountName, "John Doe");
-		
+	public void loginTest_Valid_JSON(User user) {
+		String accountName = homePage.goToLoginPage().doValidLogin(user.getUsername(), user.getPassword()).getAccountName();
+		assertEquals(accountName, user.getAccountName());	
+	}
+	
+	@Test(description = "Verify Login with Invalid Credentials", groups = {"smoke", "regression"},
+			dataProviderClass = com.ui.dataproviders.LoginDataProviders.class, dataProvider = "LoginTestDataProvider_JSON")
+	public void loginTest_Invalid_JSON(User user) {
+		String errorMessage = homePage.goToLoginPage().doInvalidLogin("nasurath@firefox.com", "Test@123");
+		assertEquals(errorMessage, "Authentication failed.");
 	}
 	
 //	@Test(description = "Verify Login with Valid Credentials", groups = {"smoke"}, 

@@ -4,11 +4,13 @@ public class User {
 
 	private String username;
 	private String password;
+	private String accountName;
 	
-	public User(String username, String password) {
+	public User(String username, String password, String accountName) {
 		super();
 		this.username = username;
 		this.password = password;
+		this.accountName = accountName;
 	}
 	
 	public String getUsername() {
@@ -27,9 +29,17 @@ public class User {
 		this.password = password;
 	}
 	
+	public String getAccountName() {
+		return accountName;
+	}
+	
+	public void setAccountName(String accountName) {
+		this.accountName = accountName;
+	}
+	
 	@Override
 	public String toString() {
-		return "User [username=" + username + ", password=" + password + "]";
+		return "User [username=" + username + ", password=" + password + ", accountName=" + accountName + "]";
 	}
 	
 	

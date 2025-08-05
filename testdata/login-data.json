@@ -2,11 +2,13 @@
 	"data": [
 		{
 			"username": "fifepo3104@binafex.com",
-			"password": "Test@123"	
+			"password": "Test@123",
+			"accountName": "John Doe"	
 		},
 		{
-			"username": "fifepo3104@binafex.com",
-			"password": "Test@1234"
+			"username": "sopodo2572@kloudis.com",
+			"password": "password",
+			"accountName": "Suresh Raina"
 		}
 	]
 }

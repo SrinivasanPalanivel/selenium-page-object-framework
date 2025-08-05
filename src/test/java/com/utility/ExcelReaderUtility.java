@@ -28,6 +28,7 @@ public class ExcelReaderUtility {
 		Row dataRow;
 		Cell emailAddressCell;
 		Cell passwordCell;
+		Cell accountNameCell;
 		List<User> userList = null;
 		User user;
 		
@@ -41,7 +42,8 @@ public class ExcelReaderUtility {
 				dataRow = iterator.next();
 				emailAddressCell = dataRow.getCell(0);
 				passwordCell = dataRow.getCell(1);
-				user = new User(emailAddressCell.toString(), passwordCell.toString());
+				accountNameCell = dataRow.getCell(2);
+				user = new User(emailAddressCell.toString(), passwordCell.toString(), accountNameCell.toString());
 				userList.add(user);
 				workbook.close();
 			}
