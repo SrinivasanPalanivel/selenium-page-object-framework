@@ -14,15 +14,15 @@ import com.ui.pojo.User;
 public class LoginTest extends BaseTest{
 
 	@Test(description = "Verify Login with Valid Credentials", groups = {"smoke","regression"}, 
-			dataProviderClass = com.ui.dataproviders.LoginDataProviders.class, dataProvider = "LoginTestDataProvider_JSON")
+			dataProviderClass = com.ui.dataproviders.LoginDataProviders.class, dataProvider = "LoginTestDataProvider_JSON", 
+			priority = 1)
 	public void loginTest_Valid_JSON(User user) {
 		String accountName = homePage.goToLoginPage().doValidLogin(user.getUsername(), user.getPassword()).getAccountName();
 		assertEquals(accountName, user.getAccountName());	
 	}
 	
-	@Test(description = "Verify Login with Invalid Credentials", groups = {"smoke", "regression"},
-			dataProviderClass = com.ui.dataproviders.LoginDataProviders.class, dataProvider = "LoginTestDataProvider_JSON")
-	public void loginTest_Invalid_JSON(User user) {
+	@Test(description = "Verify Login with Invalid Credentials", groups = {"smoke", "regression"}, priority = 2)
+	public void loginTest_Invalid_JSON() {
 		String errorMessage = homePage.goToLoginPage().doInvalidLogin("nasurath@firefox.com", "Test@123");
 		assertEquals(errorMessage, "Authentication failed.");
 	}
