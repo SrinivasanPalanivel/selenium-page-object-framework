@@ -48,7 +48,7 @@ jobs:
 
     # Store Scrrenshots
     - name: Upload Scrrenshots
-      if: always()
+      if: hashFiles('screenshots/**') != ''
       uses: actions/upload-artifact@4.6.2
       with:
         name: Screenshots
