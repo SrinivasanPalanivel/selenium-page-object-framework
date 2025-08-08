@@ -74,7 +74,9 @@ jobs:
       run: |
        mkdir -p public/extent-reports
        cp -R report.html public/extent-reports/
-       cp -R screenshots/ public/extent-reports/screenshots/
+       if [ -d "screenshots"]; then
+         cp -R screenshots/ public/extent-reports/screenshots/
+       fi
        ls -l
 
     - name: Deploy
